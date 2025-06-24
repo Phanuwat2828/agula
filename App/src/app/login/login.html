@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+    <div class="login-glass">
+        <div class="login-header">
+            <h1>Welcome Back</h1>
+            <p>Please login to your account</p>
+        </div>
+        
+        <form class="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+            </div>
+            
+            <div class="form-group" style="text-align: right;">
+                <a href="#" style="font-size: 0.9rem;">Forgot password?</a>
+            </div>
+            
+            <button type="submit" class="login-button">
+                <i class="fas fa-sign-in-alt" style="margin-right: 8px;"></i> Login
+            </button>
+            
+            <div class="divider">OR</div>
+            
+            <div class="social-login">
+                <div class="social-btn">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="social-btn">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-btn">
+                    <i class="fab fa-apple"></i>
+                </div>
+            </div>
+        </form>
+        
+        <div class="login-footer">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+
+    <script>
+        // Add animation on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const glass = document.querySelector('.login-glass');
+            glass.style.opacity = '0';
+            glass.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                glass.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                glass.style.opacity = '1';
+                glass.style.transform = 'translateY(0)';
+            }, 100);
+            
+            // Form validation
+            const form = document.querySelector('.login-form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                
+                if(!username || !password) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+                
+                // Simulate loading
+                const btn = form.querySelector('button');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Authenticating...';
+                btn.disabled = true;
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    alert('Login successful! (This is a demo)');
+                    // window.location.href = 'dashboard.html';
+                }, 1500);
+            });
+            
+            // Add hover effects to social buttons
+            const socialBtns = document.querySelectorAll('.social-btn');
+            socialBtns.forEach(btn => {
+                btn.addEventListener('mouseenter', () => {
+                    const icon = btn.querySelector('i');
+                    if(icon.classList.contains('fa-google')) {
+                        btn.style.background = 'rgba(219, 68, 55, 0.7)';
+                    } else if(icon.classList.contains('fa-facebook-f')) {
+                        btn.style.background = 'rgba(59, 89, 152, 0.7)';
+                    } else if(icon.classList.contains('fa-apple')) {
+                        btn.style.background = 'rgba(0, 0, 0, 0.7)';
+                    }
+                });
+                
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.background = 'rgba(255, 255, 255, 0.1)';
+                });
+                
+                btn.addEventListener('click', () => {
+                    alert('Social login clicked! (This is a demo)');
+                });
+            });
+        });
+    </script>
+</body>
