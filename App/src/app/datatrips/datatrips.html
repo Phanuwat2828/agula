@@ -1,0 +1,14 @@
+<div class="trip-card" *ngIf="tripData">
+  
+  <h1>{{ tripData.name }}</h1>
+  <p><strong>ประเทศ:</strong> {{ tripData.country }}</p>
+
+  <p>{{ tripData.detail }}</p>
+
+  <ul>
+    <li><strong>รหัสทริป (idx):</strong> {{ tripData.idx }}</li>
+    <li><strong>Destination ID:</strong> {{ tripData.destinationId }}</li>
+    <li><strong>ระยะเวลา:</strong> {{ tripData.duration }} วัน</li>
+    <li><strong>ราคา:</strong> {{ tripData.price }} THB</li>
+  </ul>
+</div>
