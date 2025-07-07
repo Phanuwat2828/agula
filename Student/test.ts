@@ -1,10 +1,21 @@
+const json = {
+  name: "Aj.M",
+  age: 20,
+  work: "Computer Science, MSU",
+  show(){
+    console.log(this.name);
+  }
+};
+console.log(typeof(json));
+console.log(json);
+console.log(json.name);
 
-import { Mytext } from './utils';
+console.log(typeof(json));
+console.log(json);
+console.log(JSON.stringify(json));
+console.log(json.name);
 
-console.log("Name : " + Mytext["name"]);
-console.log("Description : " + Mytext["description"]);
-Mytext["friend"].forEach((friend,index) => {
-    console.log("Friend ",index+1," : " + friend)
-});
-
-
+let jsonStr: string = JSON.stringify(json);
+const jsonObj = JSON.parse(jsonStr);
+console.log(jsonObj);
+console.log(jsonObj.name);

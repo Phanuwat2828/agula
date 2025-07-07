@@ -20,4 +20,11 @@ describe('Home', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+  let func = () => {
+    console.log('This is an anonymous function');
+  };
+
+
 });

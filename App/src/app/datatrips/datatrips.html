@@ -1,14 +1,51 @@
-<div class="trip-card" *ngIf="tripData">
-  
-  <h1>{{ tripData.name }}</h1>
-  <p><strong>ประเทศ:</strong> {{ tripData.country }}</p>
+<!-- datatrips.html -->
+<div class="trip-container">
+  <!-- กำลังโหลด -->
+  <p *ngIf="isLoading && !errorMsg">Loading...</p>
 
-  <p>{{ tripData.detail }}</p>
+  <!-- เกิดข้อผิดพลาด -->
+  <p *ngIf="!isLoading && errorMsg" class="error">
+    Error: {{ errorMsg }}
+  </p>
 
-  <ul>
-    <li><strong>รหัสทริป (idx):</strong> {{ tripData.idx }}</li>
-    <li><strong>Destination ID:</strong> {{ tripData.destinationId }}</li>
-    <li><strong>ระยะเวลา:</strong> {{ tripData.duration }} วัน</li>
-    <li><strong>ราคา:</strong> {{ tripData.price }} THB</li>
-  </ul>
+  <!-- เมื่อโหลดเสร็จและมีข้อมูล -->
+  <ng-container *ngIf="!isLoading && tripData?.length">
+    <div
+      class="trip-card"
+      *ngFor="let trip of tripData; let i = index"
+      [attr.data-index]="i"
+    >
+      <div class="card-header">
+        <h1 class="trip-title">{{ trip.name }}</h1>
+        <div class="country-tag">{{ trip.country }}</div>
+      </div>
+
+      <!-- รูปปก -->
+      <div class="detail_" style="display: flex; flex-direction: row;">
+         <img
+          class="cover-img"
+          [src]="trip.coverimage"
+          [alt]="trip.name"
+        />
+
+        <!-- รายละเอียด -->
+        <p class="trip-detail">{{ trip.detail }}</p>
+      </div>
+     
+
+      <!-- ข้อมูลเพิ่มเติม -->
+      <div class="trip-info">
+        <div
+          class="info-item"
+          *ngFor="let item of getInfoItems(trip)"
+        >
+          <span class="info-label">{{ item.label }}:</span>
+          <span class="info-value">{{ item.value }}</span>
+        </div>
+      </div>
+    </div>
+  </ng-container>
 </div>
+
+
+

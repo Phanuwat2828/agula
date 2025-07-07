@@ -37,7 +37,7 @@ interface Trip {
 })
 export class DatatripsComponent implements OnInit {
   url = 'http://localhost:3000/trip';
-  tripData!: Trip;
+  tripData!: Trip[];
   isLoading = true;
   errorMsg = '';
 
@@ -52,8 +52,7 @@ export class DatatripsComponent implements OnInit {
       if (id !== null) {
         this.load(id);
       } else {
-        this.errorMsg = 'Invalid or missing trip ID in query string';
-        this.isLoading = false;
+        this.load_();
       }
     });
   }
@@ -63,13 +62,42 @@ export class DatatripsComponent implements OnInit {
     try {
       const response = await fetch(uri);
       if (!response.ok) throw new Error(`Status ${response.status}`);
-      this.tripData = await response.json() as Trip;
+      this.tripData = await response.json() as Trip[];
+      console.log(this.tripData)
     } catch (err: any) {
       this.errorMsg = err.message || 'Load failed';
     } finally {
+      
       this.isLoading = false;
     }
   }
+
+  private async load_(): Promise<void> {
+    const uri = `${this.url}`;
+    try {
+      const response = await fetch(uri);
+      if (!response.ok) throw new Error(`Status ${response.status}`);
+      this.tripData = await response.json() as Trip[];
+      console.log(this.tripData)
+    } catch (err: any) {
+      this.errorMsg = err.message || 'Load failed';
+    } finally {
+      
+      this.isLoading = false;
+    }
+  }
+    getInfoItems(trip: Trip) {
+      return [
+        { label: 'รหัสทริป',    value: trip.idx },
+        { label: 'Destination', value: trip.destinationId ?? '-' },
+        { label: 'Duration',    value: `${trip.duration} วัน` },
+        { label: 'Price',       value: `${trip.price.toLocaleString()} THB` }
+      ];
+    }
+  
+
+
+
 }
 
 
