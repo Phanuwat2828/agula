@@ -17,7 +17,6 @@ console.log(idx);
 activiies.splice(idx, 1);
 console.log(activiies);
 
-
 activiies.push('BoardGaming');
 console.log(activiies);
 

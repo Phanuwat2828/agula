@@ -31,4 +31,4 @@ let idx1 = 0;
 while (idx1 < users.length) {
   console.log(users[idx1]);
   idx1++;
-}
+} 

@@ -22,9 +22,7 @@ describe('Home', () => {
   });
 
 
-  let func = () => {
-    console.log('This is an anonymous function');
-  };
+ 
 
 
 });
