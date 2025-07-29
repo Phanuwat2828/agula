@@ -108,31 +108,49 @@
 
         .director-slider {
             display: flex;
-            justify-content: center;
+            align-items: center;
             margin-top: 30px;
             opacity: 0;
             transition: opacity 0.5s ease;
+            justify-content: space-between;
+            gap: 5px;
+            overflow-x: scroll;
+            -ms-overflow-style: none; /* IE และ Edge */
+            scrollbar-width: none; /* Firefox */
+          
+        }
+
+        .director-slider::-webkit-scrollbar {
+            display: none; /* Chrome, Safari */
         }
 
         .director-slider.show {
             opacity: 1;
         }
-
+        .creator_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+      
         .director-card {
             background-color: #1E1E1E;
             padding: 15px 25px;
             border-radius: 10px;
-            margin: 0 10px;
+            margin-right: 0 10px;
             color: white;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             min-width: 200px;
+            justify-content: center;
         }
 
         .director-name {
             font-size: 18px;
             margin-bottom: 5px;
-            color: #FFD700;
+            color: white;
         }
 
         .director-role {

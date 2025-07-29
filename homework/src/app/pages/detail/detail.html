@@ -1,0 +1,45 @@
+    <app-nav></app-nav>
+    <div class="bg">
+         <div class="container">
+        <div class="movie-header">
+            <div class="movie-background">
+                <img [src]="data_show.image" alt="Arcane background">
+            </div>
+            
+            <div class="movie-poster">
+                <div class="poster-image">
+                    <img [src]="data_show.image_bg" alt="Arcane poster">
+                </div>
+                
+                <div class="movie-info">
+                    <h1 class="movie-title">{{data_show.name}}</h1>
+                    <div class="rating">
+                        <span class="rating-value" style="color: yellow;">{{data_show.midb}}</span>
+                        <span style="color: yellow;">IMDb Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="movie-detail">
+            <p>{{data_show.detail}}</p>
+        </div>
+        
+        <div class="video-container">
+            <iframe [src]="videoUrl" title="Arcane trailer" allowfullscreen></iframe>
+        </div>
+        
+        <div class="creators-section">
+            <h2 class="section-title">Cast</h2>
+            <div class="creators-grid">
+                <div *ngFor="let creator of data_show.creator" class="creator-card">
+                    <div  class="creator-image">
+                        <img [src]="creator.image" alt="Hailee Steinfeld">
+                    </div>
+                    <div class="creator-name">{{creator.name}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   

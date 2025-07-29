@@ -1,24 +1,30 @@
 
 <div style="width: 100vw; height: 100vh; display: flex; flex-direction: column; background-color: rgb(27, 27, 27);">
     <app-nav></app-nav>
-     <div class="slider-container">
+     <div class="slider-container" style="margin-top: 5vh;">
+        <div style="width: 1200px;">
+            <h2 style="color: white;">Top 10 Movie</h2>
+        </div>
         <div class="movie-slider" id="movieSlider" >
             <!-- Movie 1 -->
-            <div *ngFor="let movie of jsonData | keyvalue"  class="movie active" data-director="Frank Darabont">
+            <div *ngFor="let movie of jsonData | keyvalue let i =index "  class="movie active" data-director="Frank Darabont">
                 <img [src]="movie.value.image" alt="The Shawshank Redemption" class="movie-image">
                 <div class="movie-details">
                     <h3 class="movie-title">{{movie.value.name}}</h3>
-                    <p class="movie-rating">{{movie.value.mimdb}}</p>
+                    <p class="movie-rating">{{"imdb "+movie.value.midb+"/10"}}</p>
                     <div class="movie-buttons">
-                        <button class="movie-button watchlist-btn">Watchlist</button>
+                        <button class="movie-button watchlist-btn" (click)="redirect(i+1)">Watchlist</button>
                         <button class="movie-button trailer-btn">Trailer</button>
                     </div>
                 </div>
             </div>
             
         </div>
-        
-        <div class="director-slider" id="directorSlider">
+       
+        <div style="width: 1200px;">
+            <h2 style="color: white;">Actor in The Movie</h2>
+        </div>
+        <div class="director-slider" id="directorSlider" >
             <!-- Director cards will be added dynamically -->
         </div>
     </div>
