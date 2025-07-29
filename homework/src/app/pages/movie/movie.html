@@ -14,7 +14,7 @@
                     <p class="movie-rating">{{"imdb "+movie.value.midb+"/10"}}</p>
                     <div class="movie-buttons">
                         <button class="movie-button watchlist-btn" (click)="redirect(i+1)">Watchlist</button>
-                        <button class="movie-button trailer-btn">Trailer</button>
+                        <a [href]="movie.value.vidoe" class="movie-button trailer-btn">Trailer</a>
                     </div>
                 </div>
             </div>
