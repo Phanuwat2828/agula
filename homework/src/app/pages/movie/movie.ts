@@ -11,6 +11,7 @@ interface Movie_type {
   image_bg: string;
   detail: string;
   vidoe: string;
+  type:string;
   creator: Creator[];
 }
 interface Creator {
@@ -93,8 +94,8 @@ export class Movie implements AfterViewInit {
          
           <div class="creator_container">
             <img src="${element['image']}" alt="" style="border-radius: 50%;">
-             <h4 style=" color: white;  text-align: center;">${directorName+" "+element.age}</h4>
-             <h3 style=" color: gray;  text-align: center;">${element.role}</h3>
+             <h4 style=" color: white;  text-align: center;">${directorName}</h4>
+              <h5 style=" color: gray;  text-align: center;">${element.age}</h5>
         </div>
         `;
         directorCard.querySelector('.creator_container')?.addEventListener('click', () => {

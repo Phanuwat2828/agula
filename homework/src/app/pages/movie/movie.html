@@ -5,12 +5,13 @@
         <div style="width: 1200px;">
             <h2 style="color: white;">Top 10 Movie</h2>
         </div>
+
         <div class="movie-slider" id="movieSlider" >
             <!-- Movie 1 -->
             <div *ngFor="let movie of jsonData | keyvalue let i =index "  class="movie active" data-director="Frank Darabont">
                 <img [src]="movie.value.image" alt="The Shawshank Redemption" class="movie-image">
                 <div class="movie-details">
-                    <h3 class="movie-title">{{movie.value.name}}</h3>
+                    <h3 class="movie-title">{{movie.value.name}} <p style="font-size: 14px; color: #5e81f4;">{{movie.value.type}}</p></h3>
                     <p class="movie-rating">{{"imdb "+movie.value.midb+"/10"}}</p>
                     <div class="movie-buttons">
                         <button class="movie-button watchlist-btn" (click)="redirect(i+1)">Watchlist</button>
@@ -18,9 +19,8 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-       
+
         <div style="width: 1200px;">
             <h2 style="color: white;">Actor in The Movie</h2>
         </div>

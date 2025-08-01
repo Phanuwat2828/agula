@@ -6,6 +6,7 @@
         "image_bg":"https://m.media-amazon.com/images/M/MV5BMWY0MWE3MmUtMmQ0ZS00Yzc2LTk5ZDEtMzYwYmE3ODA4ZWI5XkEyXkFqcGc@._V1_FMjpg_UX1800_.jpg",
         "detail":"You don’t need to be an anime fan or a gamer to appreciate the magic of Netflix's mega-hit “Arcane.” Based on the online multiplayer game “League of Legends,” the show is surprisingly accessible, with a gorgeous mix of 2D and 3D animation, compelling characters, and a rich narrative that tackles big ideas while staying grounded in human relationships. The first season won over critics and fans alike, scoring a 9.0 rating on IMDb and quietly winning a Primetime Emmy for Outstanding Animated Program. Season 2 finds conflict simmering between the “haves” of utopian city Piltover and the “have-nots” of the underground Zaun, but also between estranged sisters Jinx (Ella Purnell) and Vi (Hailee Steinfeld). Although the series concludes in this final season, Linke has teased there are more “League” stories to tell. ",
         "vidoe":"https://www.youtube.com/embed/Pj-2KzHjjD0?si=9MmmoftHleZqKo4J",
+        "type":"Action Animation",
         "creator": [
             {
                 "name": "Hailee Steinfeld",
@@ -62,6 +63,7 @@
         "image_bg":"https://m.media-amazon.com/images/M/MV5BYTczYjYwMjktMGQ2My00NGRiLTlhY2EtMzE0ZTI0OTIxYjJlXkEyXkFqcGc@._V1_FMjpg_UX1800_.jpg",
         "detail":"Moana reunites with Maui after a mysterious call from her ancestors sets her off on a new high seas adventure. The sequel was inevitable, especially considering Moana was the most streamed movie of 2023 — not bad for a movie that was released in 2016. Auli’i Cravalho heads up the returning voice cast alongside Dwayne Johnson, with Temuera Morrison as Chief Tui, Rachel House as Gramma Tala, and Alan Tudyk as Heihei the rooster. And did you know the live-action movie is filming currently?",
         "vidoe":"https://www.youtube.com/embed/hDZ7y8RP5HE?si=6UxV0-mbSVxQZbp7",
+        "type":"Animation",
         "creator":[
             {
                 "name": "Auli'i Cravalho",
@@ -99,7 +101,7 @@
                 "title": "Awhimai Fraser is known for Moana 2 (2024), Ahikaroa (2018) and Frozen Reo Maori (2022). She is married to James Tito."
             },
             {
-                "name": "Khaleesi Lambert-Tsuda",
+                "name": "Khaleesi Lambert",
                 "image": "https://m.media-amazon.com/images/M/MV5BYjgxOTMwNWQtYzY2My00Y2NiLTk0OGMtMGYxZGZlZDZmMDU5XkEyXkFqcGc@._V1_QL75_UX140_CR0,1,140,140_.jpg",
                 "role": "Simea",
                 "age": "ไม่เปิดเพย",
@@ -117,6 +119,7 @@
         "image":"https://i.pinimg.com/736x/36/10/84/36108435e6845f06e0103360cff7079f.jpg",
         "image_bg":"https://m.media-amazon.com/images/M/MV5BNTc5NmI2ODktMDMwOS00NzIxLWIwNGUtNmUwMTRiNWZjMTI3XkEyXkFqcGc@._V1_FMjpg_UX1800_.jpg",
         "vidoe":"https://www.youtube.com/embed/GpGByJa1Gb8?si=PLQhaXj8zRluSYMk",
+        "type":"Fantasy",
         "detail":"If you’re new to the world of Wicked, here’s what you need to know. In 1995, author Gregory Maguire wrote the novel “Wicked: The Life and Times of the Wicked Witch of the West”, a revisionist origin story about Elphaba, the antagonist from Frank L. Buam’s “The Wizard of Oz.” Then in 2003, the popular book was adapted into a Broadway musical that focused on the complicated relationship between Elphaba and her school roommate Glinda. Now, director John M. Chu is bringing this beloved fantasy tale to the silver screen with a musical movie starring Cynthia Erivo and Ariana Grande as the bewitching duo whose passion, talents, and personalities bring them together before fate takes them down very different paths.",
         "creator":[
             {
@@ -137,7 +140,7 @@
                 "name":"Jeff Goldblum",
                 "image":"https://m.media-amazon.com/images/M/MV5BZWIxM2YzMTEtMjFiNy00NWQ2LWI0Y2MtZGVmYjM0YWFmZThmXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
                 ,"age":"72",
-                "role":"The Wonderful Wizard of Oz",
+                "role":"Wizard of Oz",
                 "title":"Jeffrey Lynn Goldblum was born October 22, 1952 in Pittsburgh, Pennsylvania, one of four children of Shirley (Temeles), a radio broadcaster who also ran an appliances firm, and Harold L. Goldblum, a doctor. His father was of Russian Jewish descent and his mother was of Austrian Jewish ancestry."
             },
             {
@@ -170,6 +173,7 @@
         "image":"https://i.pinimg.com/736x/26/73/02/2673020dcb758c851483e769f96c3154.jpg",
         "image_bg":"https://www.cnet.com/a/img/resize/5bccae86b3ab1fa5a1be6a277209818b9c0b1d31/hub/2024/09/18/60900259-ccd5-484f-b77c-3c6a6af21808/en-us-squids2-teaser-thedrag-vertical-27x40-srgb-pre.jpg?auto=webp&fit=crop&height=675&width=1200",
         "vidoe":"https://www.youtube.com/embed/JqR4mVk4JgQ?si=E0EHD1vdhTl62zUw",
+        "type":"Survival",
         "detail":"It’s been three years since the entire world cheered on Gi-hun (Lee Jung-jae) as he escaped a lethal game show and vowed to track down those responsible. Now, the unlikely hero returns to make good on his promise in Season 2, which sees Player 456 head back into the game with a whole new group of contestants ready to set their humanity aside for a chance at the grand prize. Prepare yourself for more tense conflicts, shocking reveals, and the return of Young-hee the murderous “Red Light, Green Light” doll. The new season drops on December 26, and we can’t think of a better way to close out the holidays than with this grim exploration of greed, capitalism, and human perseverance.",
         "creator":[
             {
@@ -221,6 +225,7 @@
     },"movie5":{
         "name":"Black Doves",
         "midb":5 ,
+        "type":"Action",
         "image":"https://m.media-amazon.com/images/M/MV5BMDQyNzE2NmYtMzExMy00NTBjLWE4ODItNjI1OTNkZWVjNDUyXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg ",
         "image_bg":"https://m.media-amazon.com/images/M/MV5BOTdlZDBkN2YtNzg2Zi00ODk2LWI3OGItOGViZmY1MmU0NjY0XkEyXkFqcGc@._V1_FMjpg_UX1800_.jpg",
         "vidoe":"https://www.youtube.com/embed/1R0d2jW7a-I?si=vd-52zM1ntquHYWW",
@@ -262,7 +267,7 @@
                 "title":"Adeel was born in London on 18th September 1980 to a Pakistani father and a Kenyan mother and attended Cheltenham College throughout the 1990s. His father was keen for him to become a lawyer and he obtained a law degree but was more interested in acting and studied at the Actors' Studio in New York"
             },
             {
-                "name":"Ella Lily Hyland",
+                "name":"Ella LilyHyland",
                 "image":"https://m.media-amazon.com/images/M/MV5BZWNjY2QxY2QtZjExNi00OTA2LWFmN2ItZDJkOWExOGUwOGMyXkEyXkFqcGc@._V1_QL75_UX140_CR0,10,140,140_.jpg"
                 ,"role":"Williams",
                 "age":"27",
@@ -274,6 +279,7 @@
     },"movie6":{
         "name":"Secret Level",
         "midb":10,
+        "type":"Action Animation",
         "image":"https://m.media-amazon.com/images/M/MV5BNTgyYjdkZWQtYTBlZi00NzZkLTkyZWUtMzM5M2JmZDA0MDkyXkEyXkFqcGc@._V1_QL75_UY414_CR8,0,280,414_.jpg",
         "image_bg":"https://m.media-amazon.com/images/M/MV5BNTVkOGYyZWYtNzczYS00MzNjLTkzZTQtMWE5YzY5MWI0ZjZmXkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg",
         "vidoe":"https://www.youtube.com/embed/YMZffM5bKmg?si=bRHW2yI79qTdRJqk",

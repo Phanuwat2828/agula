@@ -9,8 +9,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  // ฟังก์ชันดึงข้อมูลจากไฟล์ JSON
   getData(): Observable<any> {
-    return this.http.get('data/data.json');  // ตำแหน่งของไฟล์ JSON ในโปรเจค
+    return this.http.get('data/data.json'); 
   }
 }
