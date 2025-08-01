@@ -16,6 +16,10 @@ interface Movie_type {
 interface Creator {
   name: string;
   image: string;
+  role:string;
+  title:string;
+  age:number| string;
+
 }
 @Component({
   selector: 'app-movie',
@@ -39,6 +43,12 @@ export class Movie implements AfterViewInit {
   redirect(id:number){
     this.router.navigate(['/detail'], {
       queryParams: { id: id }
+    });
+  }
+  redirect_preson(id:number,index:number){
+    this.router.navigate(['/preson'], {
+      queryParams: { id: id ,index:index}
+
     });
   }
   ngAfterViewInit() {
@@ -74,7 +84,7 @@ export class Movie implements AfterViewInit {
     const creatorList = this.jsonData["movie" + index.toString()]["creator"];
     if (this.directorSlider) {
       this.directorSlider.innerHTML = ''; // ล้างก่อน
-      creatorList.forEach(element => {
+      creatorList.forEach((element,i)=> {
         const directorName = element['name'];
 
         const directorCard = document.createElement('div');
@@ -83,10 +93,14 @@ export class Movie implements AfterViewInit {
          
           <div class="creator_container">
             <img src="${element['image']}" alt="" style="border-radius: 50%;">
-             <h4 style=" color: white;  text-align: center;">${directorName}</h4>
+             <h4 style=" color: white;  text-align: center;">${directorName+" "+element.age}</h4>
+             <h3 style=" color: gray;  text-align: center;">${element.role}</h3>
         </div>
         `;
-
+        directorCard.querySelector('.creator_container')?.addEventListener('click', () => {
+          this.redirect_preson(index, i);
+        });
+       
         this.directorSlider!.appendChild(directorCard); // ✅ ปลอดภัยเพราะเราเช็กแล้ว
       });
 

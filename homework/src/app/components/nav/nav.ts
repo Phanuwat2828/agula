@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-nav',
   imports: [],
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './nav.css'
 })
 export class Nav {
+  constructor(private location: Location){}
 
+
+  public goback(){
+    this.location.back();
+  }
 }

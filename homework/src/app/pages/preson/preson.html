@@ -1,0 +1,28 @@
+
+
+
+<div class="body" style="background-color: #121212;">
+    <app-nav></app-nav>
+    
+    <div class="contianer">
+        <div class="profile-card" style="background-color: #1e1e1e;">
+            <div class="profile-header" style="border-bottom: solid 1px gray;">
+                <img [src]="creator.image" alt="Nelson Lee" class="profile-image">
+                <div class="profile-info">
+                    <h1>Nelson Lee</h1>
+                    <div class="role" style="color: #5e81f4;">Actor • {{creator.role}}</div>
+                    <div class="age" style="color: gray;">{{creator.age}} years old</div>
+                </div>
+            </div>
+            
+            <div class="profile-content">
+                <p class="bio" style="color: white;">{{creator.title}}</p>
+                
+                <div class="video-title">Featured Video</div>
+                <div class="video-container">
+                    <iframe [src]="videoUrl" title="Nelson Lee video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

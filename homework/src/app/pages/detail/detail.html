@@ -32,7 +32,7 @@
         <div class="creators-section">
             <h2 class="section-title">Cast</h2>
             <div class="creators-grid">
-                <div *ngFor="let creator of data_show.creator" class="creator-card">
+                <div *ngFor="let creator of data_show.creator let i =index" class="creator-card" (click)="redirect_preson(i)">
                     <div  class="creator-image">
                         <img [src]="creator.image" alt="Hailee Steinfeld">
                     </div>

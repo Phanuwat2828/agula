@@ -6,24 +6,52 @@
         "image_bg":"https://m.media-amazon.com/images/M/MV5BMWY0MWE3MmUtMmQ0ZS00Yzc2LTk5ZDEtMzYwYmE3ODA4ZWI5XkEyXkFqcGc@._V1_FMjpg_UX1800_.jpg",
         "detail":"You don’t need to be an anime fan or a gamer to appreciate the magic of Netflix's mega-hit “Arcane.” Based on the online multiplayer game “League of Legends,” the show is surprisingly accessible, with a gorgeous mix of 2D and 3D animation, compelling characters, and a rich narrative that tackles big ideas while staying grounded in human relationships. The first season won over critics and fans alike, scoring a 9.0 rating on IMDb and quietly winning a Primetime Emmy for Outstanding Animated Program. Season 2 finds conflict simmering between the “haves” of utopian city Piltover and the “have-nots” of the underground Zaun, but also between estranged sisters Jinx (Ella Purnell) and Vi (Hailee Steinfeld). Although the series concludes in this final season, Linke has teased there are more “League” stories to tell. ",
         "vidoe":"https://www.youtube.com/embed/Pj-2KzHjjD0?si=9MmmoftHleZqKo4J",
-        "creator":[
-             {
-                "name":"Hailee Steinfeld",
-                "image":"https://m.media-amazon.com/images/M/MV5BYjg0MjA4OGEtMTc1ZS00ZmJhLTgyYjItMTY4YjI0NjVjNjllXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+        "creator": [
+            {
+                "name": "Hailee Steinfeld",
+                "role": "Vi",
+                "age": "28",
+                "image": "https://m.media-amazon.com/images/M/MV5BYjg0MjA4OGEtMTc1ZS00ZmJhLTgyYjItMTY4YjI0NjVjNjllXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+               , "title":"Hailee Steinfeld was born on December 11, 1996 in Tarzana, California, to Cheri (Domasin), an interior designer, and Peter Steinfeld, a personal fitness trainer. She has a brother, Griffin. Her uncle is Jake Steinfeld, a fitness trainer, and her great-uncle is actor Larry Domasin. Her father is of Ashkenazi Jewish descent and her mother's ancestry is Filipino, African-American, British Isles, and German."
             },
             {
-                "name":"Ella Purnell",
-                "image":"https://m.media-amazon.com/images/M/MV5BZGNkMWI4ZmItN2Y2Mi00Mzc1LWExYTctMjMzMjhmMDE0NWVkXkEyXkFqcGc@._V1_QL75_UX140_CR0,1,140,140_.jpg"
+                "name": "Ella Purnell",
+                "role": "Powder / Jinx",
+                "age":"28",
+                "image": "https://m.media-amazon.com/images/M/MV5BZGNkMWI4ZmItN2Y2Mi00Mzc1LWExYTctMjMzMjhmMDE0NWVkXkEyXkFqcGc@._V1_QL75_UX140_CR0,1,140,140_.jpg"
+                ,"title":"Purnell was born in London, U.K. She recently received the Madame Figaro Rising Star Award at the 2024 Canneseries Festival on behalf of her exciting and versatile career to date. She can be seen starring as 'Lucy MacLean' in Fallout, Prime Video's post-apocalyptic series and the platform's highest-rated show. Upcoming, she will executive-produce and star in the Sky drama series Sweetpea."
             },
             {
-                "name":"Kevin Alejandro",
-                "image":"https://m.media-amazon.com/images/M/MV5BMTA0NDkyNzI0MTBeQTJeQWpwZ15BbWU4MDI4ODUxODUx._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                "name": "Kevin Alejandro",
+                "role": "Jayce Talis",
+                "age": "49",
+                "image": "https://m.media-amazon.com/images/M/MV5BMTA0NDkyNzI0MTBeQTJeQWpwZ15BbWU4MDI4ODUxODUx._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                ,"title":"Kevin Michael Alejandro is an American actor and film director. He is known for his roles as Nate Moretta in the crime drama Southland, Forklift Mike in Parenthood, Jesús Velázquez in the supernatural thriller True Blood, Sebastian Blood / Brother Blood in the superhero series Arrow and as Daniel Espinóza in the comedy-crime drama Lucifer."
             },
             {
-                "name":"Katie Leung",
-                "image":"https://m.media-amazon.com/images/M/MV5BZDE3NDY1ZjItYTg2Ny00Y2JjLWEzNTItMzdjOGQ5OTBhNjVhXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                "name": "Katie Leung",
+                "role": "Caitlyn Kiramman",
+                "age": "37",
+                "image": "https://m.media-amazon.com/images/M/MV5BZDE3NDY1ZjItYTg2Ny00Y2JjLWEzNTItMzdjOGQ5OTBhNjVhXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                ,"title":"Katie Leung began her career when she was cast as Cho Chang in the Warner Brothers feature film Harry Potter and the Goblet of Fire, a role she subsequently reprised for Harry Potter and the Order of the Phoenix and Harry Potter and the Deathly Hallows (Part II). Alongside her acting career, Katie has trained at the Royal Conservatoire of Scotland. She made her professional theatre debut in the role of Er-Hong in Sacha Wares' production of Wild Swans which premiered in Boston before transferring to the Young Vic Theatre London in April 2012."
+            },
+            {
+                "name": "Toks Olagundoye",
+                "role": "Mel Medarda",
+                "age": "49",
+                "image": "https://m.media-amazon.com/images/M/MV5BMTY2NzM2NTMzNF5BMl5BanBnXkFtZTcwOTc2ODAzOQ@@._V1_QL75_UY207_CR11,0,140,140_.jpg",
+                "title":"Born to a Norwegian mother and a Nigerian father, Toks Olagundoye is a native of Lagos, Nigeria. Educated in Nigeria, Switzerland and England for elementary, middle and high school, she received a Bachelor of Fine Arts in theatre from Smith College. Captivated by cinema from a very early age, Toks was always eager to move to the United States, the location of all of her favorite films (except the James Bond series, of course) and motherland to many of her favorite actors. "
+                
+            },
+            {
+                "name": "Harry Lloyd",
+                "role": "Viktor",
+                "age": "41",
+                "image": "https://m.media-amazon.com/images/M/MV5BMjE2OTkyOTkzMl5BMl5BanBnXkFtZTcwODYxMTUwOA@@._V1_QL75_UY207_CR13,0,140,140_.jpg",
+                "title":"Harry Charles Salusbury Lloyd is an English actor. He is known for his roles as Will Scarlet in the 2006 BBC drama Robin Hood, Jeremy Baines in the 2007 Doctor Who episodes 'Human Nature' and 'The Family of Blood', Viserys Targaryen in the first season of the HBO series Game of Thrones, Peter Quayle in the Starz series Counterpart, Charles Xavier in the third season of the FX series Legion, Bernard Marx in the Peacock series Brave New World, and Viktor in the Netflix series Arcane."
             }
-        ]
+            ]
+
            
         
     },
@@ -35,24 +63,50 @@
         "detail":"Moana reunites with Maui after a mysterious call from her ancestors sets her off on a new high seas adventure. The sequel was inevitable, especially considering Moana was the most streamed movie of 2023 — not bad for a movie that was released in 2016. Auli’i Cravalho heads up the returning voice cast alongside Dwayne Johnson, with Temuera Morrison as Chief Tui, Rachel House as Gramma Tala, and Alan Tudyk as Heihei the rooster. And did you know the live-action movie is filming currently?",
         "vidoe":"https://www.youtube.com/embed/hDZ7y8RP5HE?si=6UxV0-mbSVxQZbp7",
         "creator":[
-
             {
-                "name":"Auli'i Cravalho",
-                "image":"https://m.media-amazon.com/images/M/MV5BMTlmZjhmN2ItOGQyOC00NWRmLTlmYjAtNzQ1ODdiNmIyOTExXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                "name": "Auli'i Cravalho",
+                "image": "https://m.media-amazon.com/images/M/MV5BMTlmZjhmN2ItOGQyOC00NWRmLTlmYjAtNzQ1ODdiNmIyOTExXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg",
+                "role": "Moana",
+                "age": 24,
+                "title": "Aulii Cravalho is an American actress and singer who made her acting debut as the voice of the titular character in the 2016 Disney 3D computer-animated musical feature film Moana. She went on to star in the NBC drama series Rise (2018), the Netflix drama film All Together Now (2020) and the Hulu romantic comedy Crush (2022)."
             },
             {
-                "name":"Dwayne Johnson",
-                "image":"https://m.media-amazon.com/images/M/MV5BOWUzNzIzMzQtNzMxYi00OWRiLTlhZjEtZTRjYWVkYzI4ZjMwXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                "name": "Dwayne Johnson",
+                "image": "https://m.media-amazon.com/images/M/MV5BOWUzNzIzMzQtNzMxYi00OWRiLTlhZjEtZTRjYWVkYzI4ZjMwXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg",
+                "role": "Maui",
+                "age": "53",
+                "title": "Dwayne Douglas Johnson, also known as The Rock, was born on May 2, 1972 in Hayward, California. He is the son of Ata Johnson (born Feagaimaleata Fitisemanu) and professional wrestler Rocky Johnson (born Wayde Douglas Bowles). His father, from Amherst, Nova Scotia, Canada, is black (of Black Nova Scotian descent), and his mother is of Samoan background (her own father was Peter Fanene Maivia, also a professional wrestler). While growing up, Dwayne traveled around a lot with his parents and watched his father perform in the ring."
             },
             {
-                "name":"Alan Tudyk",
-                "image":"https://m.media-amazon.com/images/M/MV5BMjE0MzEwNDUxNV5BMl5BanBnXkFtZTcwNTE1MDAzOQ@@._V1_QL75_UX140_CR0,9,140,140_.jpg"
+                "name": "Alan Tudyk",
+                "image": "https://m.media-amazon.com/images/M/MV5BMjE0MzEwNDUxNV5BMl5BanBnXkFtZTcwNTE1MDAzOQ@@._V1_QL75_UX140_CR0,9,140,140_.jpg",
+                "role": "Heihei",
+                "age": "54",
+                "title": "Alan Tudyk was born in El Paso, Texas, but grew up in Plano, where he attended Plano Sr. High. In 1990, he went on to study drama at Lon Morris Jr. College. While there, he was awarded the Academic Excellence Award for Drama. He was also named Most Likely to Succeed and Sophomore Beau. During this time, Alan was also an active member of the Delta Psi Omega fraternity."
             },
             {
-                "name":"Temuera Morrison",
-                "image":"https://m.media-amazon.com/images/M/MV5BMzNhOTY4NjktYTVkNC00NjVlLWIyYzgtMTc4MGZjZGE3ODhjXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                "name": "Temuera Morrison",
+                "image": "https://m.media-amazon.com/images/M/MV5BMzNhOTY4NjktYTVkNC00NjVlLWIyYzgtMTc4MGZjZGE3ODhjXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg",
+                "role": "Chief Tui",
+                "age": "64",
+                "title": "After training in drama under the New Zealand Special Performing Arts Training Scheme. One of his earliest starring roles was in the 1988 film Never Say Die, opposite Lisa Eilbacher. In 1994, he received attention for his role as the violent and abusive Maori husband Jake 'The Muss' Heke in Once Were Warriors,"
+            },
+            {
+                "name": "Awhimai Fraser",
+                "image": "https://m.media-amazon.com/images/M/MV5BYjZjOWZlYjQtNDgxYS00Nzg4LWI3ZWUtNmNlNTI4OGE5MmY0XkEyXkFqcGc@._V1_QL75_UX140_CR0,1,140,140_.jpg",
+                "role": "Matangi",
+                "age": "ไม่เปิดเพย",
+                "title": "Awhimai Fraser is known for Moana 2 (2024), Ahikaroa (2018) and Frozen Reo Maori (2022). She is married to James Tito."
+            },
+            {
+                "name": "Khaleesi Lambert-Tsuda",
+                "image": "https://m.media-amazon.com/images/M/MV5BYjgxOTMwNWQtYzY2My00Y2NiLTk0OGMtMGYxZGZlZDZmMDU5XkEyXkFqcGc@._V1_QL75_UX140_CR0,1,140,140_.jpg",
+                "role": "Simea",
+                "age": "ไม่เปิดเพย",
+                "title": "Born and raised in Kaneohe, Hawaii on the Island of Oahu, Khaleesi Lambert-Tsuda was cast as the voice of Simea, Moana's little sister in Moana 2. Much like the character she portrays, Khaleesi is lively, feisty, energetic and cares deeply for her family/friends."
             }
-        ]
+            ]
+
             
         
         
@@ -68,18 +122,44 @@
             {
                 "name":"Cynthia Erivo",
                 "image":"https://m.media-amazon.com/images/M/MV5BMTcyMTI3NzI1Nl5BMl5BanBnXkFtZTgwNjQ3Njk2NjM@._V1_QL75_UX140_CR0,6,140,140_.jpg"
+                ,"age":"38",
+                "role":"Elphaba",
+                "title":"Cynthia Erivo is an English actress, singer, and songwriter. She is the recipient of several accolades, including a Daytime Emmy Award, a Grammy Award, and a Tony Award, in addition to nominations for two Academy Awards, two Golden Globe Awards, a Primetime Emmy Award, and two Screen Actors Guild Awards."
             },
             {
                 "name":"Ariana Grande",
                 "image":"https://m.media-amazon.com/images/M/MV5BM2JhZWJmMDEtNTU5MS00YmQ3LTk1NjMtOGFlMjM2MjZlNjg5XkEyXkFqcGc@._V1_QL75_UY140_CR55,0,140,140_.jpg"
+                ,"age":"32",
+                "role":"Galinda",
+                "title":"Ariana Grande was born Ariana Grande-Butera on June 26, 1993 in Boca Raton, Florida to Joan Grande, a chief executive officer for Hose-McCann Communications & Edward Butera, a graphic designer, photographer, artist and Ibi Designs Inc. owner/founder. Both of her parents are of Italian descent. Ariana starred in the 2008 musical, 13 before becoming a household name through her roles on Nickelodeon."
             },
             {
                 "name":"Jeff Goldblum",
                 "image":"https://m.media-amazon.com/images/M/MV5BZWIxM2YzMTEtMjFiNy00NWQ2LWI0Y2MtZGVmYjM0YWFmZThmXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                ,"age":"72",
+                "role":"The Wonderful Wizard of Oz",
+                "title":"Jeffrey Lynn Goldblum was born October 22, 1952 in Pittsburgh, Pennsylvania, one of four children of Shirley (Temeles), a radio broadcaster who also ran an appliances firm, and Harold L. Goldblum, a doctor. His father was of Russian Jewish descent and his mother was of Austrian Jewish ancestry."
             },
             {
                 "name":"Michelle Yeoh",
                 "image":"https://m.media-amazon.com/images/M/MV5BMTg0NTI0NDkzOF5BMl5BanBnXkFtZTcwMjYwMTIwNw@@._V1_QL75_UX140_CR0,16,140,140_.jpg"
+                ,"age":"62",
+                "role":"Madame Morrible",
+                "title":"Michelle Yeoh was born in Ipoh, Malaysia. She's the daughter of Janet Yeoh & Kian Teik Yeoh. She's of Hokkien descent, speaking English and Malay before Chinese. A ballet dancer since 4, she moved to London to study at the Royal Academy as a teen. After a brief dance career, she won the Miss Malaysia beauty pageant title in and the Miss Moomba beauty pageant title in Melbourne, Australia in the early 1980s. Her first on camera work was a 1984 commercial with martial arts star Jackie Chan. In 1985, she began making action movies with D&B Films of Hong Kong."
+            },
+             {
+                "name":"Jonathan Bailey",
+                "image":"https://m.media-amazon.com/images/M/MV5BNDhhZjdlZjctZjQ0OS00ODIwLWFmMTItNmQ0MzJiYTQ0MjFmXkEyXkFqcGc@._V1_QL75_UX140_CR0,5,140,140_.jpg"
+                ,"age":"37",
+                "role":"Fiyero",
+                "title":"Jonathan Stuart Bailey is an English actor. Known for his roles on stage and screen, he began his career as a child performer in Royal Shakespeare Company productions when he was seven years old, and by eight was performing as Gavroche in a West End production of Les Misérables. Since then, he has established a prolific career on screen and stage working on different genres and portraying a wide array of characters."
+            },
+             {
+                "name":"Ethan Slater",
+                "image":"https://m.media-amazon.com/images/M/MV5BMWMyMTYxODktMGFjNC00OGIyLThkODUtOThlMzBjM2I0NmFkXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                ,"age":"33",
+                "role":"Boq",
+                "title":"Ethan Slater was born on 2 June 1992 in Washington, District of Columbia, USA. He is an actor and writer, known for Wicked (2024), The SpongeBob Musical: Live on Stage! (2019) and Fosse/Verdon (2019). He was previously married to Lilly Jay"
             }
         ]
             
@@ -93,26 +173,49 @@
         "detail":"It’s been three years since the entire world cheered on Gi-hun (Lee Jung-jae) as he escaped a lethal game show and vowed to track down those responsible. Now, the unlikely hero returns to make good on his promise in Season 2, which sees Player 456 head back into the game with a whole new group of contestants ready to set their humanity aside for a chance at the grand prize. Prepare yourself for more tense conflicts, shocking reveals, and the return of Young-hee the murderous “Red Light, Green Light” doll. The new season drops on December 26, and we can’t think of a better way to close out the holidays than with this grim exploration of greed, capitalism, and human perseverance.",
         "creator":[
             {
-                "name":"Lee Jung-jae",
-                "image":"https://m.media-amazon.com/images/M/MV5BNzQ4YTczN2UtMGQxYi00YTMxLWI0NTAtNjc3YjYxZDBjMzg3XkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                "name": "Lee Jung-jae",
+                "image": "https://m.media-amazon.com/images/M/MV5BNzQ4YTczN2UtMGQxYi00YTMxLWI0NTAtNjc3YjYxZDBjMzg3XkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg",
+                "role": "Seong Gi-hoon",
+                "age": 52,
+                "title": "Apart from being a top star in film and TV, Jung-Jae Lee also works as a highly successful fashion model. One year after his debut on television in 1993, Lee was cast in his first film, a feature by Bae Chang-ho. His breakthrough came in late 1998 in the award-winning film An Affair by E-J Yong. This was followed up by another success, City of the Rising Sun, for which he received a Best Actor award at the domestic Chungryong Awards ceremony."
             },
             {
-                "name":"Lee Byung-hun",
-                "image":"https://m.media-amazon.com/images/M/MV5BMmExYjVlNGUtMTA1OC00ZTcxLTk3N2EtN2FkYmY4Yzg4OTE3XkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                "name": "Lee Byung-hun",
+                "image": "https://m.media-amazon.com/images/M/MV5BMmExYjVlNGUtMTA1OC00ZTcxLTk3N2EtN2FkYmY4Yzg4OTE3XkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg",
+                "role": "Front Man (In-ho)",
+                "age": "55",
+                "title": "Lee Byung-hun was born in 1970 in Seoul, South Korea, and grew up in a wealthy family, thanks to his father, who was a successful businessman. He never dreamed of pursuing acting until a friend of his mother's suggested it. He auditioned for the KBS television network in 1991 and was accepted. His first project was a short lived TV series called 'Asphalt My Hometown'. Lee became popular, especially with the female crowd, in his next KBS project, 'Tomorrow Love', in 1992. Though he continued to do TV series' throughout the 90s, he also tried his luck in feature films."
             },
             {
-                "name":"Wi Ha-joon",
-                "image":"https://m.media-amazon.com/images/M/MV5BODM3NmQ3YTItZGRjYi00YWY5LThmZDYtZDdhYjYwYzIzNmY4XkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                "name": "Wi Ha-joon",
+                "image": "https://m.media-amazon.com/images/M/MV5BODM3NmQ3YTItZGRjYi00YWY5LThmZDYtZDdhYjYwYzIzNmY4XkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg",
+                "role": "Hwang Jun-ho",
+                "age": "33",
+                "title": "Wi Ha-joon was born on 5 August 1991 in South Jeolla, South Korea. He is an actor, known for Squid Game (2021), Gonjiam: Haunted Asylum (2018) and Romance Is a Bonus Book (2019)."
             },
             {
-                "name":"Gong Yoo",
-                "image":"https://m.media-amazon.com/images/M/MV5BMDE3NjdkOTgtMjNlZi00YzMzLTllNWEtZDllNDJmNWRiNmI0XkEyXkFqcGc@._V1_QL75_UY140_CR35,0,140,140_.jpg"
+                "name": "Gong Yoo",
+                "image": "https://m.media-amazon.com/images/M/MV5BMDE3NjdkOTgtMjNlZi00YzMzLTllNWEtZDllNDJmNWRiNmI0XkEyXkFqcGc@._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "role": "Game Guide",
+                "age": "46",
+                "title": "Gong Ji-Chul (better known as Gong Yoo) was born in Busan, Korea on July 10, 1979. The actor is known for the movies Train to Busan (2016), Silenced (2011), Squid Game (2021), and The Age of Shadows (2016)."
             },
             {
-                "name":"Park Gyuyoung",
-                "image":"https://m.media-amazon.com/images/M/MV5BNmY2NGFiZTAtMWU0Ny00YWEyLThmNmUtZDNjN2Q4Zjg4MjNiXkEyXkFqcGc@._V1_CR511,0,3333,5000_QL75_UX140_CR0,12,140,140_.jpg"
+                "name": "Park Gyuyoung",
+                "image": "https://m.media-amazon.com/images/M/MV5BNmY2NGFiZTAtMWU0Ny00YWEyLThmNmUtZDNjN2Q4Zjg4MjNiXkEyXkFqcGc@._V1_CR511,0,3333,5000_QL75_UX140_CR0,12,140,140_.jpg",
+                "role": "Kang No-eul",
+                "age": "31",
+                "title": "Park Gyuyoung was born on 27 July 1993 in Busan, South Korea. She is an actress, known for Squid Game (2021), Celebrity (2023) and It's Okay to Not Be Okay (2020)."
+            },
+            {
+                "name": "Greg Chun",
+                "image": "https://m.media-amazon.com/images/M/MV5BMWY5MTEwOWItZTBlMS00M2E0LWE2ZTgtOWFhMjUzODhmYWQ2XkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg",
+                "role": "Choi Seung-hyun",
+                "age": "53",
+                "title": "Greg is a Los Angeles-based voice actor best known for his video game work. As a music producer, he has created music for numerous national advertising campaigns, hundreds of mobile games, and his long-standing collaboration with The Lonely Island has allowed his music to be featured on Saturday Night Live, the 67th Primetime Emmy Awards, the Michael Bolton Sexy Valentine's Day Special, and the critically-acclaimed comedy series I Think You Should Leave."
             }
         ]
+
             
         
     },"movie5":{
@@ -126,22 +229,44 @@
             {
                 "name":"Keira Knightley",
                 "image":"https://m.media-amazon.com/images/M/MV5BMTYwNDM0NDA3M15BMl5BanBnXkFtZTcwNTkzMjQ3OA@@._V1_QL75_UX140_CR0,6,140,140_.jpg"
+                ,"role":"Helen Webb",
+                "age":"40",
+                "title":"Keira Christina Knightley was born March 26, 1985 in the South West Greater London suburb of Richmond. She is the daughter of actor Will Knightley and actress turned playwright Sharman Macdonald. An older brother, Caleb Knightley, was born in 1979. Her father is English, while her Scottish-born mother is of Scottish and Welsh origin. Brought up immersed in the acting profession from both sides - writing and performing - it is little wonder that the young Keira asked for her own agent at the age of three. "
             },
             {
                 "name":"Ben Whishaw",
                 "image":"https://m.media-amazon.com/images/M/MV5BMTc1MDYzNzY4MF5BMl5BanBnXkFtZTcwMDcwNzU0OA@@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                ,"role":"Sam Young",
+                "age":"44",
+                "title":"Widely regarded as one of the greatest stage and screen actors of his generation both in his native Great Britain and internationally, Benjamin John Whishaw was born in Clifton, Bedfordshire, to Linda (Hope), who works in cosmetics, and Jose Whishaw, who works in information technology. He has a twin brother, James. He is of French, German, Russian (father) and English (mother) descent."
             },
             {
                 "name":"Sarah Lancashire",
                 "image":"https://m.media-amazon.com/images/M/MV5BMjI3MTk5MTU1NF5BMl5BanBnXkFtZTcwMzU1ODExOA@@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                ,"role":"Reed",
+                "age":"60",
+                "title":"Sarah Lancashire was born on 10 October 1964 in Oldham, Lancashire, England, UK. She is an actress and producer, known for Happy Valley (2014), Yesterday (2019) and Clocking Off (2000). She has been married to Peter Salmon since 22 August 2001. They have one child. She was previously married to Gary Hargreaves."
             },
             {
                 "name":"Andrew Buchan",
                 "image":"https://m.media-amazon.com/images/M/MV5BODg3MmMzNjctM2Y1Yy00ZTZiLTlkY2EtN2IwMTFlNDMxOTliXkEyXkFqcGc@._V1_QL75_UX140_CR0,32,140,140_.jpg"
+                ,"role":"Wallace Webb",
+                "age":"46",
+                "title":"Andrew Buchan was born on 19 February 1979 in Stockport, Cheshire, England, UK. He is an actor and writer, known for All the Money in the World (2017), Broadchurch (2013) and Garrow's Law (2009). He has been married to Amy Nuttall since 8 September 2012. They have one child."
             },
             {
                 "name":"Adeel Akhtar",
                 "image":"https://m.media-amazon.com/images/M/MV5BMTk2NTMwMjE2Ml5BMl5BanBnXkFtZTgwNDI5MDA1MzI@._V1_QL75_UX140_CR0,7,140,140_.jpg"
+                ,"role":"British PM",
+                "age":"44",
+                "title":"Adeel was born in London on 18th September 1980 to a Pakistani father and a Kenyan mother and attended Cheltenham College throughout the 1990s. His father was keen for him to become a lawyer and he obtained a law degree but was more interested in acting and studied at the Actors' Studio in New York"
+            },
+            {
+                "name":"Ella Lily Hyland",
+                "image":"https://m.media-amazon.com/images/M/MV5BZWNjY2QxY2QtZjExNi00OTA2LWFmN2ItZDJkOWExOGUwOGMyXkEyXkFqcGc@._V1_QL75_UX140_CR0,10,140,140_.jpg"
+                ,"role":"Williams",
+                "age":"27",
+                "title":"Ella Lily Hyland is known for Black Doves (2024), Five and a Half Love Stories in an Apartment in Vilnius, Lithuania (2023) and Fifteen-Love (2023)."
             }
         ]
             
@@ -157,49 +282,44 @@
             {
                 "name":"Keanu Reeves",
                 "image":"https://m.media-amazon.com/images/M/MV5BNDEzOTdhNDUtY2EyMy00YTNmLWE5MjItZmRjMmQzYTRlMGRkXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                ,"role":"Pilot",
+                "age":"60",
+                "title":"Keanu Charles Reeves, whose first name means 'cool breeze over the mountains' in Hawaiian, was born September 2, 1964 in Beirut, Lebanon. He is the son of Patric Reeves, a showgirl and costume designer, and Samuel Nowlin Reeves, a geologist. Keanu's father was born in Hawaii, of Native Hawaiian and Chinese ancestry while Keanu's mother is originally from Essex England. After his parents' marriage dissolved, Keanu moved with his mother and younger sister, Kim Reeves, to New York City, then Toronto."
             },
             {
                 "name":"Arnold Schwarzenegger",
                 "image":"https://m.media-amazon.com/images/M/MV5BMTI3MDc4NzUyMV5BMl5BanBnXkFtZTcwMTQyMTc5MQ@@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                ,"role":"King Aelstrom",
+                "age":"78",
+                "title":"With an almost unpronounceable surname and a thick Austrian accent, who would have ever believed that a brash, quick talking bodybuilder from a small European village would become one of Hollywood's biggest stars, marry into the prestigious Kennedy family, amass a fortune via shrewd investments and one day be the Governor of California!?"
             },
             {
                 "name":"Ariana Greenblatt",
                 "image":"https://m.media-amazon.com/images/M/MV5BZDJkMjNmYTUtNzdmYS00ZDVmLWIxZWQtZjhkZjAyM2FiNTkxXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                ,"role":"Ana Spelunky",
+                "age":"17",
+                "title":"Ariana Greenblatt has swiftly risen to prominence as one of Hollywood's most dynamic and sought-after young talents, captivating audiences with her versatility, charisma, and emotional depth. From her breakout role in Disney Channel's 'Stuck in the Middle' (2016-2018), to scene-stealing performances in global blockbusters like 'Avengers: Infinity War' (2018) and 'Barbie' (2023), she has consistently proven her ability to command the screen."
             },
             {
                 "name":"Kevin Hart",
                 "image":"https://m.media-amazon.com/images/M/MV5BMTY4OTAxMjkxN15BMl5BanBnXkFtZTgwODg5MzYyMTE@._V1_QL75_UX140_CR0,13,140,140_.jpg"
+                ,"role":"Buddibot",
+                "age":"46",
+                "title":"Kevin Darnell Hart is an African-American comedian and actor who is known for his roles in the Jumanji sequels including Jumanji: Welcome to the Jungle (2017) and Jumanji: The Next Level (2019), Undeclared (2001), Scary Movie 3 (2003), Think Like a Man (2012), Ride Along (2014), The Secret Life of Pets (2016), Captain Underpants: The First Epic Movie (2017), Central Intelligence (2016) and Fast & Furious Presents: Hobbs & Shaw (2019). Hart's comedic reputation continued to grow with the release of his first stand-up album Kevin Hart: I'm a Grown Little Man (2009). "
             },
             {
                 "name":"Laura Bailey",
                 "image":"https://m.media-amazon.com/images/M/MV5BMmZkOGUxOTktNTYzZS00YTAyLTgxYWItNTg1OTZlMDRkMjEwXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
-            }
-        ]
-            
-        
-    },"movie7":{
-        "name":"The Lord of the Rings: The War of the Rohirrim",
-        "midb":7.5,
-        "image":"https://m.media-amazon.com/images/M/MV5BMmU1YzZkMjAtYjNjOC00ZDFhLWE3Y2QtZTM2ZTdkZWM1OGM3XkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,414_.jpg",
-        "image_bg":"https://m.media-amazon.com/images/M/MV5BY2Y4OTY0MjctZWFhZi00ODI2LWExMmQtZWViNjYzZGRkYjA3XkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg",
-        "vidoe":"https://www.youtube.com/embed/u4WpsGgNsME?si=ZkZb6TvB9dLyS_zr",
-        "detail":"A footnote of a story told in J. R. R. Tolkein's novel gets forged into an animated movie from anime god Kenji Kamiyama, employing a visual style that will pay tribute to Peter Jackson's depiction of Middle-earth. The story reveals the history of the kingdom of Rohan and its then king, Helm Hammerhand, in his war with the Dunlendings, the wild men living on the fringes of the kingdom. If you're only a bit familiar with the lore, yes, Helm Hammerhand has a lot to do with Helm's Deep. And he was seen in statue form in The Two Towers. Since we're living in Tolkein Time, Gandalf, Galadriel, and others are alive, but they are not involved in this particular tale. However, we felt actual real emotions learning that Miranda Otto's Eowyn will narrate the story.",
-        "creator":[
-            {
-                "name":"Brian Cox",
-                "image":"https://m.media-amazon.com/images/M/MV5BNTk2MTg1MjYtMmQ5Yy00OTI0LTkyYmQtMDVlNDQ5MTQyMzU3XkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                ,"role":"Smokes",
+                "age":"44",
+                "title":"Laura Bailey is an award-winning Los Angeles-based voice actor known for her roles in animation and video games, as well as the massively popular hit show and media brand, Critical Role."
             },
             {
-                "name":"Miranda Otto",
-                "image":"https://m.media-amazon.com/images/M/MV5BMjAzNTMyMzEzM15BMl5BanBnXkFtZTgwMDk3MjM1OTE@._V1_QL75_UX140_CR0,12,140,140_.jpg"
-            },
-            {
-                "name":"Gaia Wise",
-                "image":"https://m.media-amazon.com/images/M/MV5BYjczYmJhNmMtYzc0Mi00MTRhLTg3YTAtNDE5Y2ViMWU4NGJiXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
-            },
-            {
-                "name":"Luca Pasqualino",
-                "image":"https://m.media-amazon.com/images/M/MV5BZTdiNjdiN2EtODBjYi00ODViLTg0YjMtYWVjMzEwMzE5MTcwXkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+                "name":"Nelson Lee",
+                "image":"https://m.media-amazon.com/images/M/MV5BM2RjMzYxNGQtMmE0Zi00OTNkLThkMDAtZTRhYzFiMThmYzRmXkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+                ,"role":"Sean",
+                "age":"49",
+                "title":"Nelson Lee was born on 16 October 1975 in Taipei, Taiwan. He is an actor and director, known for Civil War (2024), Ahsoka (2023) and Stargirl (2020)."
             }
         ]
             
