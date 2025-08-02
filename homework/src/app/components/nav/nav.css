@@ -8,7 +8,7 @@
 
         /* Navbar Styles */
         .navbar {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             padding: 15px 50px;
             display: flex;
             justify-content: space-between;
@@ -33,43 +33,12 @@
             margin-right: 10px;
             font-size: 28px;
         }
-
         .nav-links {
             display: flex;
+            gap: 2rem;
             list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 30px;
-            position: relative;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            padding: 5px 0;
-        }
-
-        .nav-links a:hover {
-            color: #fffc00;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #fffc00;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
+            margin: 0;
+            padding: 0;
         }
 
         .cta-button {
@@ -129,3 +98,21 @@
                 margin: 15px 0;
             }
         }
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: rgba(212, 212, 55, 0.1);
+    border: 1px solid rgba(212, 212, 55, 0.3);
+}
+
+.nav-button:hover {
+    background: rgba(212, 212, 55, 0.2);
+    box-shadow: 0 0 12px rgba(212, 212, 55, 0.2);
+    transform: translateY(-2px);
+}

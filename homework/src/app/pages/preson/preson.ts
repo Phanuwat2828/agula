@@ -1,27 +1,10 @@
 import { Component } from '@angular/core';
 import { Nav } from '../../components/nav/nav';
-import myData from '../../../assets/data.json';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { RouterModule,Router,RouterLink,RouterOutlet } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-
-interface Movie_type {
-  name: string;
-  midb: number;
-  image: string;
-  image_bg: string;
-  detail: string;
-  vidoe: string;
-  creator: Creator[];
-}
-interface Creator {
-  name: string;
-  image: string;
-  role:string;
-  title:string;
-  age:number | string;
-
-}
+import { DataService } from '../../service/datajson/datajson';
+import { Movie_type,Creator } from '../../interface/movie-interface';
 
 @Component({
   selector: 'app-preson',
@@ -36,7 +19,7 @@ export class Preson {
   data_show: any;
   creator!:Creator;
   jsonData: { [key: string]: Movie_type }= {};
-  constructor(private activeatedRoute: ActivatedRoute,private router: Router,private sanitizer: DomSanitizer) {
+  constructor(private activeatedRoute: ActivatedRoute,private router: Router,private sanitizer: DomSanitizer,private dataservice:DataService) {
     activeatedRoute.queryParamMap.subscribe((params) => {
       this.id =
         this.activeatedRoute.snapshot.queryParamMap.get('id') || '';
@@ -45,7 +28,7 @@ export class Preson {
   }
 
   ngOnInit() {
-    this.jsonData = myData;
+     this.jsonData = this.dataservice.getData();
     this.data_show = this.jsonData["movie"+this.id];
     this.creator=this.data_show['creator'][this.index];
     const rawUrl = this.data_show.vidoe;

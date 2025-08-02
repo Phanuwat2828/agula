@@ -1,27 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { Nav } from '../../components/nav/nav';
 import { CommonModule } from '@angular/common';
-import myData from '../../../assets/data.json';
+import { Movie_type } from '../../interface/movie-interface';
 import { RouterModule,Router,RouterLink,RouterOutlet } from '@angular/router';
+import { DataService } from '../../service/datajson/datajson';
 
-interface Movie_type {
-  name: string;
-  midb: number;
-  image: string;
-  image_bg: string;
-  detail: string;
-  vidoe: string;
-  type:string;
-  creator: Creator[];
-}
-interface Creator {
-  name: string;
-  image: string;
-  role:string;
-  title:string;
-  age:number| string;
-
-}
 @Component({
   selector: 'app-movie',
   standalone:true,
@@ -31,7 +14,7 @@ interface Creator {
 })
 
 export class Movie implements AfterViewInit {
-  constructor(private router: Router){}
+  constructor(private router: Router,private data:DataService){}
   currentIndex = 0;
   autoScrollInterval: any;
   movies: NodeListOf<Element> | undefined;
@@ -39,7 +22,7 @@ export class Movie implements AfterViewInit {
   directorSlider: HTMLElement | null = null;
   jsonData: { [key: string]: Movie_type }= {};
   ngOnInit() {
-    this.jsonData = myData;
+    this.jsonData = this.data.getData();
   }
   redirect(id:number){
     this.router.navigate(['/detail'], {
@@ -84,7 +67,7 @@ export class Movie implements AfterViewInit {
   updateDirectorInfo(index: number) {
     const creatorList = this.jsonData["movie" + index.toString()]["creator"];
     if (this.directorSlider) {
-      this.directorSlider.innerHTML = ''; // ล้างก่อน
+      this.directorSlider.innerHTML = ''; 
       creatorList.forEach((element,i)=> {
         const directorName = element['name'];
 
@@ -144,3 +127,4 @@ export class Movie implements AfterViewInit {
 
 
 }
+
