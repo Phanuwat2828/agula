@@ -1,0 +1,58 @@
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <button (click)="goback()" style="border: none; background: none; color: red; cursor: pointer; position: relative; font-size: 16px; top: -170px; right: 220px;">back</button>
+            <img src="garena.png" alt="" style="width: 300px; margin-bottom: 20px;">
+            <h2 style="color: red;">ยินดีต้อนรับกลับ!</h2>
+            <p style="color: gray;">เข้าสู่ระบบเพื่อเข้าถึงบัญชีและบริการทั้งหมดของเรา</p>
+            
+        </div>
+        
+        <div class="right-panel">
+            <h2 style="color: white;">เข้าสู่ระบบ</h2>
+            <p style="color: white;">กรุณากรอกข้อมูลด้านล่างเพื่อเข้าสู่ระบบ</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="email" style="color: white;">อีเมล</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="กรอกอีเมลของคุณ" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" style="color: white;">รหัสผ่าน</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="กรอกรหัสผ่านของคุณ" required>
+                    </div>
+                </div>
+                
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember" style="color: white;">จดจำฉัน</label>
+                    </div>
+                    <a href="#" class="forgot-password" style="color: white;">ลืมรหัสผ่าน?</a>
+                </div>
+                
+                <button type="submit" class="login-btn" (click)="login()">เข้าสู่ระบบ</button>
+            </form>
+
+            <div class="separator">
+                <div class="line"></div>
+                <div class="text" style="color: white;">หรือ</div>
+                <div class="line"></div>
+            </div>
+            
+           
+            
+            <div class="signup-link" style="color: white;">
+                ยังไม่มีบัญชี? <a href="#">สมัครสมาชิก</a>
+            </div>
+        </div>
+    </div>
+
+</body>

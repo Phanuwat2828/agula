@@ -1,0 +1,18 @@
+
+    <nav>
+        <div class="logo-container">
+            <img src="garena.png" class="logo">
+            <p style="color: rgb(88, 87, 87);">ศูนย์เติมเงินอย่างเป็นทางการ</p>
+        </div>
+         
+        <div class="nav-image">
+            <div *ngIf="!isLoggedIn()" style="display: flex; justify-content: space-between; width: 150px; margin-right: 10px;">
+                <button  class="btn" (click)="redirect('/login')">เข้าสู่ระบบ</button>
+                <button class="btn" (click)="redirect('/register')">สมัครสมาชิก</button>
+            </div>
+            <button class="btn" *ngIf="isLoggedIn()" (click)="logout()">ออกจากระบบ</button>
+            <button class="btn" *ngIf="isLoggedIn()" (click)="redirect('/home')">รายการเกม</button>
+            <img *ngIf="isLoggedIn()" (click)="redirect('/member')" class="profile-img" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80" alt="Profile">
+        </div>
+    </nav>
+    

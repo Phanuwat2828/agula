@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "homework": {
+    "router": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,15 +16,13 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/assets",
-              
               {
-                
                 "glob": "**/*",
                 "input": "public"
               }
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ]
           },
@@ -56,10 +54,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "homework:build:production"
+              "buildTarget": "router:build:production"
             },
             "development": {
-              "buildTarget": "homework:build:development"
+              "buildTarget": "router:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,6 +84,6 @@
     }
   },
   "cli": {
-    "analytics": "af1c7e21-0a07-4838-8724-1c4f4477f3bb"
+    "analytics": "37132c84-a279-43f1-800e-4b451b70b995"
   }
 }

@@ -1,0 +1,39 @@
+<div class="container" style="margin-top: 100px;">
+  <h1>รายการเกม สวัดี {{name}}</h1>
+
+  <div class="game-list">
+    <div class="game-card" *ngFor="let game of games">
+      <img [src]="game.image" alt="{{ game.name }}">
+      <div class="game-info">
+        <h2>{{ game.name }}</h2>
+        <p>{{ game.details }}</p>
+        <button (click)="showGame(game)">ดูรายละเอียด</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ส่วนแสดงรายละเอียดของเกมที่เลือก -->
+  <div *ngIf="selectedGame" class="game-detail" style="display: flex; flex-direction: column; align-items: center;">
+    <h2>{{ selectedGame.name }}</h2>
+    <img [src]="selectedGame.image" alt="{{ selectedGame.name }}" class="detail-img">
+    <p>{{ selectedGame.details }}</p>
+    <div class="center-container">
+    <div class="form-group">
+        <label for="password" style="color: black;">ID Game</label>
+        <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="text" id="password" [(ngModel)]="id_game" name="" placeholder="กรอกรหัสผ่านของคุณ" required>
+        </div>
+    </div>
+     <div class="form-group">
+        <label for="password" style="color: black;">Price</label>
+        <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="text" id="password" [(ngModel)]="price" name="" placeholder="กรอกรหัสผ่านของคุณ" required>
+        </div>
+    </div>
+    <button (click)="orderGame()"><p style="font-size: 16px;"> เติมเงินด่วน</p></button>
+
+    
+  </div>
+</div>

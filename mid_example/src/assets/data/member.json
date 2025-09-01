@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "email": "user1@example.com",
+        "password": "123",
+        "fullname": "User One",
+        "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+        "role": "user"
+    },
+     {
+        "id": 2,
+        "email": "user2@example.com",
+        "password": "password2",
+        "fullname": "User Two",
+        "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+        "role": "user"
+    }
+    
+]
