@@ -1,1 +1,88 @@
-<button mat-raised-button color="primary" (click)="callApi()">Call API</button>
+
+<div style="margin-bottom: 20px; display: flex; flex-direction: row ;">
+    <button mat-raised-button color="primary" (click)="doSearch(1)">Reset Filter</button>
+    <div class="search-container">
+        <div class="search-input">
+            <i class="fas fa-id-card"></i>
+            <input type="text" id="id-search" placeholder="ค้นหาด้วย ID"[(ngModel)]="id" (ngModelChange)="doGetId()" >
+        </div>
+        
+        <div class="search-input">
+            <i class="fas fa-user"></i>
+            <input type="text" id="name-search"[(ngModel)]="name" (ngModelChange)="doSearch()" placeholder="ค้นหาด้วยชื่อ" >
+        </div>
+    </div>
+</div>
+<div>
+    <div class="wrap">
+  <h1>ทริปท่องเที่ยว</h1>
+
+  <div *ngIf="errorMsg" class="alert">{{ errorMsg }}</div>
+
+  <div *ngIf="loading" class="skeleton-grid">
+    <div class="skeleton-card" *ngFor="let s of [0,1,2,3,4,5,6,7,8,9]"></div>
+  </div>
+
+  <div class="grid" *ngIf="!loading">
+    <div class="card" *ngFor="let t of data">
+      <div class="thumb">
+        <img [src]="imageOrFallback(t.coverimage)" [alt]="t.name" />
+      </div>
+      <div class="body">
+        <div class="title">
+          <span class="name">{{ t.name }}</span>
+          <span class="country">• {{ t.country }}</span>
+        </div>
+
+        <p class="detail">{{ short(t.detail, 160) }}</p>
+
+        <div class="meta">
+          <div class="pill">ระยะเวลา: {{ t.duration }} วัน</div>
+          <div class="pill">ปลายทาง #{{ t.destinationid }}</div>
+        </div>
+
+        <div class="footer">
+          <div class="price">{{ thb(t.price) }}</div>
+          <button class="btn">ดูรายละเอียด</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pager" *ngIf="totalPages > 1">
+    <button (click)="goPage(page-1)" [disabled]="page === 1">ก่อนหน้า</button>
+
+    <button
+      *ngIf="pagesToShow()[0] > 1"
+      class="num"
+      (click)="goPage(1)">
+      1
+    </button>
+    <span *ngIf="pagesToShow()[0] > 2" class="dots">…</span>
+
+    <button
+      *ngFor="let p of pagesToShow()"
+      class="num"
+      [class.active]="p === page"
+      (click)="goPage(p)">
+      {{ p }}
+    </button>
+
+    <span *ngIf="pagesToShow()[pagesToShow().length - 1] < totalPages - 1" class="dots">…</span>
+    <button
+      *ngIf="pagesToShow()[pagesToShow().length - 1] < totalPages"
+      class="num"
+      (click)="goPage(totalPages)">
+      {{ totalPages }}
+    </button>
+
+    <button (click)="goPage(page+1)" [disabled]="page === totalPages">ถัดไป</button>
+  </div>
+
+  <div class="meta-info">
+    หน้า {{ page }} / {{ totalPages }} • ทั้งหมด {{ total | number }} รายการ • ต่อหน้า {{ limit }}
+  </div>
+</div>
+
+</div>

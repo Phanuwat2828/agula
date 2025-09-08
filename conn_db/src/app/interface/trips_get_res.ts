@@ -8,3 +8,11 @@ export interface TripGetResponse {
   price: number;
   duration: number;
 }
+
+export interface TripPage {
+  page: number;
+  limit: number;
+  total: number;
+  totalPages: number;
+  data: TripGetResponse[];
+}
