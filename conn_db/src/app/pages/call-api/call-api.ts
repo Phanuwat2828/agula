@@ -40,7 +40,7 @@ export class CallApi {
     this.status = 'search';
     this.id = "";
     this.trips = await lastValueFrom(this.apiCall.getSearch(this.name, page));
-    this.applyResponse(this.trips);
+    this.applyResponse(this.trips!);
   }
 
   async doGetId() {
@@ -51,7 +51,7 @@ export class CallApi {
     this.total = 1;
     this.totalPages = 1;
     this.dataId = await lastValueFrom(this.apiCall.getId(this.id));
-    this.data = [this.dataId];
+    this.data = [this.dataId!];
     console.log(this.data);
   }
 
