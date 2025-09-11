@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { environment } from '../../env';
-import { lastValueFrom } from 'rxjs';
+import { last, lastValueFrom } from 'rxjs';
 import { ApiCall } from '../../service/api-call';
-import { TripGetResponse, TripPage } from '../../interface/trips_get_res';
+import { RouterModule,Router,RouterLink,RouterOutlet } from '@angular/router';
+import { Des, TripGetResponse, TripPage,TripReq,place } from '../../interface/trips_get_res';
 import { FormsModule } from '@angular/forms'; // <-- ต้อง import
 @Component({
   selector: 'app-call-api',
@@ -23,36 +24,92 @@ export class CallApi {
   data: TripGetResponse[] | undefined;
   dataId: TripGetResponse | undefined;
   loading = false;
+  isOpen=false;
   errorMsg = '';
   status = '';
   name = '';
   id='';
+  des!:Des[];
+  place : place[] | undefined;
+  selectedCountry! : string ;
+  country!:string;
+  destinationid!:number;
 
-  constructor(private apiCall: ApiCall) {
+  // =========== add data ===========
+  trip_req: TripReq = {
+    name: '',
+    country: '',
+    destinationid: 0,
+    coverimage: '',
+    detail: '',
+    price: 0,
+    duration: 1
+  };
+
+  constructor(private apiCall: ApiCall,private router: Router) {
    
   }
+  
+  open() {
+    this.isOpen = true;  
+  }
+
+  close() {
+    this.isOpen = false;
+  }
+
 
   ngOnInit(): void {
      this.doSearch(1);
+     this.getplace();
+     this.doDes()
   }
 
+  async Addtrip(){
+    console.log(this.trip_req)
+    await this.apiCall.posttrips(this.trip_req);
+    this.close();
+     window.location.reload();
+  }
+
+
+  async doDes(){
+    this.des = await lastValueFrom(this.apiCall.getplace_())
+  }
   async doSearch( page:number=1) {
     this.status = 'search';
     this.id = "";
+    this.selectedCountry = ""
     this.trips = await lastValueFrom(this.apiCall.getSearch(this.name, page));
     this.applyResponse(this.trips!);
+  }
+
+  async getplace(){
+    
+    this.place = await lastValueFrom(this.apiCall.getplace());
+    
+  }
+
+  async reset(){
+    this.status = '';
+    this.id = "";
+    this.name = "";
+    this.doSearch(1);
   }
 
   async doGetId() {
     this.status = 'getid';
     this.name = '';
-    this.page = 1;
-    this.limit = 10;
-    this.total = 1;
-    this.totalPages = 1;
-    this.dataId = await lastValueFrom(this.apiCall.getId(this.id));
-    this.data = [this.dataId!];
-    console.log(this.data);
+    this.selectedCountry = ""
+    this.trips = await lastValueFrom(this.apiCall.getId(this.id));
+    this.applyResponse(this.trips!);
+  }
+
+  redirect(id:number){
+    this.router.navigate(['/details'], {
+      queryParams: { idx: id }
+
+    });
   }
 
   private applyResponse(res: TripPage) {
@@ -62,6 +119,17 @@ export class CallApi {
     this.totalPages = res.totalPages;
     this.data = res.data;
     console.log(this.data);
+  }
+
+  
+  async doCountry(){
+    this.status = '';
+    this.id = "";
+    this.name = "";
+    console.log('ประเทศที่เลือก:', this.selectedCountry);
+
+    this.trips = await lastValueFrom(this.apiCall.postplace(this.selectedCountry));
+    this.applyResponse(this.trips!);
   }
 
   goPage(p: number) {

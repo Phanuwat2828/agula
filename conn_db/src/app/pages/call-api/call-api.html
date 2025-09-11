@@ -1,6 +1,6 @@
 
 <div style="margin-bottom: 20px; display: flex; flex-direction: row ;">
-    <button mat-raised-button color="primary" (click)="doSearch(1)">Reset Filter</button>
+    <button mat-raised-button color="primary" (click)="reset()">Reset Filter</button>
     <div class="search-container">
         <div class="search-input">
             <i class="fas fa-id-card"></i>
@@ -12,6 +12,15 @@
             <input type="text" id="name-search"[(ngModel)]="name" (ngModelChange)="doSearch()" placeholder="ค้นหาด้วยชื่อ" >
         </div>
     </div>
+     <div class="dropdown">
+            <select class="dropdown-select" [(ngModel)]="selectedCountry" (change)="doCountry()">
+                <option value="">-- กรุณาเลือกประเทศ --</option>
+                <option value="" *ngFor="let v of place" [value]="v.country">
+                  {{v.country}}</option>
+                
+          </select>
+      </div>
+      <button class="btn2" style="margin-left: 10px;" (click)="open()">เพิ่มข้อมูล</button>
 </div>
 <div>
     <div class="wrap">
@@ -43,11 +52,78 @@
 
         <div class="footer">
           <div class="price">{{ thb(t.price) }}</div>
-          <button class="btn">ดูรายละเอียด</button>
+          
+          <button class="btn" (click)="redirect(t.idx)">ดูรายละเอียด</button>
         </div>
       </div>
     </div>
   </div>
+  <div class="modal" id="addDataModal" [class.active]="isOpen">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-plus-circle"></i> เพิ่มข้อมูลท่องเที่ยว</h2>
+      <button class="close-btn" id="closeModal" (click)="close()">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <!-- ใช้ ngSubmit -->
+      <form #dataForm="ngForm" (ngSubmit)="Addtrip()">
+
+        <div class="form-col">
+          <label for="name" class="required-field">ชื่อสถานที่</label>
+          <input type="text" id="name" name="name" required [(ngModel)]="trip_req.name">
+        </div>
+
+        <div class="form-col">
+          <label class="required-field">ประเทศ</label>
+          <select name="country" [(ngModel)]="trip_req.country" required>
+            <option value="">-- กรุณาเลือกประเทศ --</option>
+            <option *ngFor="let v of place" [value]="v.country">{{ v.country }}</option>
+          </select>
+        </div>
+
+        <div class="form-col">
+          <label class="required-field">ทวีป</label>
+          <select name="destinationid" [(ngModel)]="trip_req.destinationid" required>
+            <option value="">-- กรุณาเลือกทวีป --</option>
+            <option *ngFor="let v of des" [value]="v.idx">{{ v.zone }}</option>
+          </select>
+        </div>
+
+        <div class="form-col">
+          <label for="price" class="required-field">ราคา (บาท)</label>
+          <input type="number" id="price" name="price" required [(ngModel)]="trip_req.price">
+        </div>
+
+        <div class="form-group">
+          <label for="coverimage" class="required-field">URL รูปภาพ</label>
+          <input type="text" id="coverimage" name="coverimage" required [(ngModel)]="trip_req.coverimage">
+          <p class="form-note">กรอก URL ของภาพ (เช่น https://example.com/image.jpg)</p>
+          <!-- bind src preview -->
+          <img class="preview-image" [src]="trip_req.coverimage" alt="Preview">
+        </div>
+
+        <div class="form-group">
+          <label for="duration" class="required-field">ระยะเวลา (วัน)</label>
+          <input type="number" id="duration" name="duration" required [(ngModel)]="trip_req.duration">
+        </div>
+
+        <div class="form-group">
+          <label for="detail" class="required-field">รายละเอียด</label>
+          <textarea id="detail" name="detail" required [(ngModel)]="trip_req.detail"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="close()">ปิด</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-save"></i> บันทึกข้อมูล
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
 
   <!-- Pagination -->
   <div class="pager" *ngIf="totalPages > 1">

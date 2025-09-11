@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดทริป - เที่ยวเชียงใหม่</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/trips" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            กลับไปยังทริปทั้งหมด
+        </a>
+
+        <div class="trip-details-container">
+            <div class="trip-hero">
+                <img [src]="data.coverimage" alt="เที่ยวเชียงใหม่">
+                <div class="trip-overlay">
+                    <h1 class="trip-title">{{data.country}}</h1>
+                    <div class="trip-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>{{data.name}}, {{data.country}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip-content">
+                <div class="trip-info">
+                    <h2 class="section-title">รายละเอียดทริป</h2>
+                    <p class="trip-description">
+                        {{data.detail}}
+                    </p>
+                </div>
+
+                <div class="trip-sidebar">
+                    <div class="booking-card">
+                        <h3 style="color: white;">เริ่มต้นที่</h3>
+                        <div class="booking-price">{{data.price}}</div>
+        
+                        <button class="booking-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            จองทริปนี้
+                        </button>
+                        <button class="booking-btn3" (click)="open()">
+                            
+                            แก้ไขทริปนี้
+                        </button>
+                         <button class="booking-btn2" (click)="onClickApply()">
+                            ลบทริปนี้
+                        </button>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="addDataModal" [class.active]="isOpen">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-plus-circle"></i> เพิ่มข้อมูลท่องเที่ยว</h2>
+      <button class="close-btn" id="closeModal" (click)="close()">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <!-- ใช้ ngSubmit -->
+      <form #dataForm="ngForm" (ngSubmit)="update()">
+
+        <div class="form-col">
+          <label for="name" class="required-field">ชื่อสถานที่</label>
+          <input type="text" id="name" name="name" required [(ngModel)]="trip_req.name">
+        </div>
+
+        <div class="form-col">
+          <label class="required-field">ประเทศ</label>
+          <select name="country" [(ngModel)]="trip_req.country" required>
+            <option value="">-- กรุณาเลือกประเทศ --</option>
+            <option *ngFor="let v of place" [value]="v.country">{{ v.country }}</option>
+          </select>
+        </div>
+
+        <div class="form-col">
+          <label class="required-field">ทวีป</label>
+          <select name="destinationid" [(ngModel)]="trip_req.destinationid" required>
+            <option value="">-- กรุณาเลือกทวีป --</option>
+            <option *ngFor="let v of des" [value]="v.idx">{{ v.zone }}</option>
+          </select>
+        </div>
+
+        <div class="form-col">
+          <label for="price" class="required-field">ราคา (บาท)</label>
+          <input type="number" id="price" name="price" required [(ngModel)]="trip_req.price">
+        </div>
+
+        <div class="form-group">
+          <label for="coverimage" class="required-field">URL รูปภาพ</label>
+          <input type="text" id="coverimage" name="coverimage" required [(ngModel)]="trip_req.coverimage">
+          <p class="form-note">กรอก URL ของภาพ (เช่น https://example.com/image.jpg)</p>
+          <!-- bind src preview -->
+          <img class="preview-image" [src]="trip_req.coverimage" alt="Preview">
+        </div>
+
+        <div class="form-group">
+          <label for="duration" class="required-field">ระยะเวลา (วัน)</label>
+          <input type="number" id="duration" name="duration" required [(ngModel)]="trip_req.duration">
+        </div>
+
+        <div class="form-group">
+          <label for="detail" class="required-field">รายละเอียด</label>
+          <textarea id="detail" name="detail" required [(ngModel)]="trip_req.detail"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="close()">ปิด</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-save"></i> บันทึกข้อมูล
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

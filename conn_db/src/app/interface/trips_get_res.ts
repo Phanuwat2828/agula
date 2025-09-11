@@ -16,3 +16,21 @@ export interface TripPage {
   totalPages: number;
   data: TripGetResponse[];
 }
+
+export interface place{
+  country:string
+}
+export interface Des{
+  idx:number;
+  zone:string
+}
+
+export interface TripReq{
+  name: string;
+  country: string;
+  destinationid: number;
+  coverimage: string;
+  detail: string;
+  price: number;
+  duration: number;
+}
